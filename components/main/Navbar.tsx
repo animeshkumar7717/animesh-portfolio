@@ -20,8 +20,11 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
 
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+          {/* <span className="font-bold ml-[10px] hidden md:block text-gray-300">
             Animesh Kumar
+          </span> */}
+          <span className="text-transparent font-bold ml-[10px] hidden md:block bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            ANIMESH KUMAR
           </span>
         </a>
 
