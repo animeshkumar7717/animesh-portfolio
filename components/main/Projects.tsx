@@ -10,7 +10,7 @@ const Projects = () => {
       {/* <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10"> */}
       <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10">
         <ProjectCard
-          src="/1Buy.png"
+          src="/one-buy.png"
           title="1Buy"
           description="1Buy connects buyers and sellers for pre-owned products. Buyers create accounts, search for items, and negotiate prices with sellers. Once a deal is agreed upon, the platform purchases the product and handles secure delivery to the buyer."
           link="https://1buy.ai/"
