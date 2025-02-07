@@ -18,8 +18,8 @@ const ProjectCard = ({ src, title, description, link }: Props) => {
 
       {/* Text Section */}
       <div className="relative p-4 text-center">
-        <h1 className="text-2xl font-semibold text-white">{title}</h1>
-        <p className="mt-2 text-gray-300 italic text-left font-serif text-md">{description}</p>
+        <h1 className="text-2xl font-semibold text-white font-serif">{title}</h1>
+        <p className="mt-2 text-gray-300 italic text-justify font-serif text-md">{description}</p>
       </div>
 
       {/* "View" Button - Ensuring it's Clickable */}
