@@ -1,7 +1,5 @@
-/** @format */
-
 "use client";
-import { motion, useMotionTemplate, useMotionValue, useScroll, useTransform } from "framer-motion";
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 // Custom Hook to track relative mouse position
@@ -85,11 +83,11 @@ export const CallToAction = () => {
   };
 
   return (
-    <section id="contact" className="py-16 relative z-10" ref={sectionRef}>
-      <div className="container">
+    <section id="contact" className="py-12 relative z-10" ref={sectionRef}>
+      <div className="container mx-auto px-4">
         <motion.div
           ref={borderedDivRef}
-          className="mx-32 py-16 px-6 md:px-10 rounded-xl overflow-hidden relative group"
+          className="max-w-lg md:max-w-3xl mx-auto py-12 md:py-16 px-6 md:px-10 rounded-xl overflow-hidden relative group"
           transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
         >
           <div className="absolute inset-0 bg-[rgb(36,16,66)] bg-blend-overlay [mask-image:radial-gradient(50%_50%_at_50%_35%,black,transparent)] group-hover:opacity-0 transition duration-700"></div>
@@ -98,13 +96,12 @@ export const CallToAction = () => {
             style={{ maskImage }}
           ></motion.div>
           <div className="relative text-center">
-            <h2 className="text-5xl font-semibold text-white">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              {" "}
-              Contact Us{" "}
-            </span>
+            <h2 className="text-3xl md:text-5xl font-semibold text-white">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                Contact Us
+              </span>
             </h2>
-            <p className="text-lg text-white/70 mt-3">
+            <p className="text-base md:text-lg text-white/70 mt-3">
               We&apos;re here to help. Send us a message, and we&apos;ll respond soon.
             </p>
             <form onSubmit={handleSubmit} className="mt-8 space-y-4 max-w-sm mx-auto text-white">
