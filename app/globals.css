@@ -64,6 +64,14 @@
   display: none;
 }
 
+a {
+  cursor: pointer !important;
+}
+
+button {
+  cursor: pointer !important;
+}
+
 
 
 html {

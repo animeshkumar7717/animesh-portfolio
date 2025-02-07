@@ -1,3 +1,5 @@
+/** @format */
+
 import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
@@ -19,7 +21,7 @@ const Navbar = () => {
           />
 
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            WebChain Dev
+            Animesh Kumar
           </span>
         </a>
 
@@ -34,18 +36,27 @@ const Navbar = () => {
             <a href="#projects" className="cursor-pointer">
               Projects
             </a>
+            <a href="#contact" className="cursor-pointer">
+              Contact
+            </a>
           </div>
         </div>
 
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
+            <a
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
               key={social.name}
-              width={24}
-              height={24}
-            />
+            >
+              <Image
+                src={social.src}
+                alt={social.name}
+                width={24}
+                height={24}
+              />
+            </a>
           ))}
         </div>
       </div>

@@ -30,15 +30,15 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-4xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Providing
+            Building
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
-              the best{" "}
+              Scalable & Interactive{" "}
             </span>
-            project exprience
+            Dynamic Web Applications
           </span>
         </motion.div>
 
@@ -46,15 +46,35 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          {/* I&apos;m a Full Stack Software Engineer with experience in Website,
+          Mobile, and Software development. Check out my projects and skills. */}
+          I specialize in JavaScript, leveraging React.js and Next.js to build
+          seamless web experiences. With expertise in Node.js, Express, and
+          microservices, I develop scalable applications. Embracing Jamstack and
+          MongoDB,I create fast, secure, and dynamic databases. With a keen eye
+          for design, I craft visually stunning and functional projects while
+          continuously exploring new technologies.
         </motion.p>
-        <motion.a
+        {/* <motion.a
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
           Learn More!
-        </motion.a>
+        </motion.a> */}
+        <div className="max-w-[200px]">
+          <a
+            href="https://animesh-portfolio-five.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.button
+              variants={slideInFromLeft(1)}
+              className="w-full py-2 button-primary text-center text-white cursor-pointer rounded-lg"
+            >
+              Learn More!
+            </motion.button>
+          </a>
+        </div>
       </div>
 
       <motion.div
